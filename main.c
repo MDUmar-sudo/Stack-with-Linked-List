@@ -22,7 +22,7 @@ int main()
 
     do{
     printf("____________________________");
-    printf("\nSTACK SORT OPERATIONS\n(1)PUSH\n(2)POP\n(3)DISPLAY\n(4)PEEK\n(5)EXIT\n");
+    printf("\nCHOOSE A STACK OPERATION\n\n(1)PUSH\n(2)POP\n(3)DISPLAY\n(4)PEEK\n(5)EXIT\n");
     printf("____________________________");
 
     printf("\nENTER YOUR CHOICE :");
@@ -56,6 +56,7 @@ int main()
 }
 
 //return stack status: Empty or Not
+
 int isEmpty(){
     if(top==NULL) return 1;
 
@@ -63,6 +64,7 @@ int isEmpty(){
 }
 
 //return stack status: Full or Not
+
 int isFull(){
     stack *n = (stack *)malloc(sizeof(stack));
     if(n==NULL) return 1;
@@ -71,6 +73,7 @@ int isFull(){
 }
 
 //append an element at the top of the stack
+
 void push()
 {
     if(isFull()){
@@ -95,6 +98,7 @@ void push()
 }
 
 //deletes top element from the stack
+
 void pop()
 {
     stack *temp;
@@ -113,6 +117,7 @@ void pop()
 }
 
 //display all the element in the stack
+
 void display()
 {
     stack *temp;
@@ -138,6 +143,7 @@ void display()
 }
 
 //peek() and top() function are same both returns top most element of the stack
+
 void peek()
 {
     if(isEmpty())
